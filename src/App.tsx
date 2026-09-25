@@ -102,7 +102,7 @@ export default function App() {
         <span className="text-slate-600">•</span>
         <button 
           onClick={() => setIsAdminOpen(true)}
-          className="text-cyan-400 hover:text-cyan-300 font-mono text-[11px] underline ml-2 font-semibold"
+          className="text-cyan-400 hover:text-cyan-300 font-mono text-xs font-semibold underline ml-2 font-semibold"
         >
           [ DPT PORTAL ]
         </button>
@@ -119,7 +119,7 @@ export default function App() {
               <span className="font-extrabold tracking-wider text-lg text-white font-mono flex items-center gap-1.5">
                 KINETIC<span className="text-cyan-400">SPORTS</span>
               </span>
-              <p className="text-[10px] tracking-widest text-slate-400 uppercase font-mono">Orthopedic PT & Performance OS</p>
+              <p className="text-xs font-semibold tracking-wider tracking-widest text-slate-400 uppercase font-mono">Orthopedic PT & Performance OS</p>
             </div>
           </div>
 
@@ -206,7 +206,7 @@ export default function App() {
                     <div className="w-3 h-3 rounded-full bg-cyan-400 animate-ping"></div>
                     <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider">FORCE DECK TELEMETRY</span>
                   </div>
-                  <span className="text-xs text-slate-500 font-mono">VALD LIVE</span>
+                  <span className="text-xs text-slate-300 font-mono">VALD LIVE</span>
                 </div>
 
                 <div className="space-y-4">
@@ -286,7 +286,7 @@ export default function App() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a0e18] via-transparent to-black/40"></div>
-                    <span className="absolute top-3 left-3 bg-black/70 backdrop-blur-md border border-slate-700/60 px-2.5 py-1 rounded-lg text-[10px] font-mono text-cyan-400 uppercase">
+                    <span className="absolute top-3 left-3 bg-black/70 backdrop-blur-md border border-slate-700/60 px-2.5 py-1 rounded-lg text-xs font-semibold tracking-wider font-mono text-cyan-400 uppercase">
                       {program.category}
                     </span>
                   </div>
@@ -299,13 +299,13 @@ export default function App() {
                         </h3>
                         <span className="font-mono font-bold text-cyan-400 text-sm">{program.price}</span>
                       </div>
-                      <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed mt-2">
+                      <p className="text-base text-zinc-200 leading-relaxed line-clamp-2 leading-relaxed mt-2">
                         {program.tagline}
                       </p>
                     </div>
 
                     <div className="space-y-2 pt-2 border-t border-slate-800/80">
-                      <span className="text-[11px] font-mono text-slate-400 uppercase tracking-wider block">Clinical Protocol:</span>
+                      <span className="text-xs font-semibold font-mono text-slate-400 uppercase tracking-wider block">Clinical Protocol:</span>
                       <ul className="text-xs space-y-1 text-slate-300">
                         {program.protocolHighlights.slice(0, 3).map((item, idx) => (
                           <li key={idx} className="flex items-center space-x-1.5">
@@ -406,23 +406,23 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-6 bg-[#0b101c] border border-slate-800 rounded-2xl">
               <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Clinician" className="w-full h-64 object-cover rounded-xl mb-4" />
-              <span className="text-[10px] font-mono text-cyan-400 uppercase">SPORTS RESIDENCY // SCS</span>
+              <span className="text-xs font-semibold tracking-wider font-mono text-cyan-400 uppercase">SPORTS RESIDENCY // SCS</span>
               <h4 className="text-lg font-bold text-white mt-1">Dr. Nathan Mercer, DPT, SCS</h4>
-              <p className="text-xs text-slate-400 mt-2">USC Doctorate • Consultant to Olympic & NCAA Division 1 Track Athletes • ACL Specialist.</p>
+              <p className="text-base text-zinc-200 leading-relaxed mt-2">USC Doctorate • Consultant to Olympic & NCAA Division 1 Track Athletes • ACL Specialist.</p>
             </div>
 
             <div className="p-6 bg-[#0b101c] border border-slate-800 rounded-2xl">
               <img src="https://images.unsplash.com/photo-1594824813596-f089602a8eb2?auto=format&fit=crop&w=600&q=80" alt="Clinician" className="w-full h-64 object-cover rounded-xl mb-4" />
-              <span className="text-[10px] font-mono text-emerald-400 uppercase">ORTHOPEDIC SPECIALIST // OCS</span>
+              <span className="text-xs font-semibold tracking-wider font-mono text-emerald-400 uppercase">ORTHOPEDIC SPECIALIST // OCS</span>
               <h4 className="text-lg font-bold text-white mt-1">Dr. Samantha Chen, DPT, OCS</h4>
-              <p className="text-xs text-slate-400 mt-2">Northwestern University DPT • Fellow, AAOMPT • Cervical Spine & Complex Shoulder Rehab.</p>
+              <p className="text-base text-zinc-200 leading-relaxed mt-2">Northwestern University DPT • Fellow, AAOMPT • Cervical Spine & Complex Shoulder Rehab.</p>
             </div>
 
             <div className="p-6 bg-[#0b101c] border border-slate-800 rounded-2xl">
               <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=600&q=80" alt="Clinician" className="w-full h-64 object-cover rounded-xl mb-4" />
-              <span className="text-[10px] font-mono text-indigo-400 uppercase">SPINE & NEURO-MOBILITY</span>
+              <span className="text-xs font-semibold tracking-wider font-mono text-indigo-400 uppercase">SPINE & NEURO-MOBILITY</span>
               <h4 className="text-lg font-bold text-white mt-1">Dr. Marcus Vance, DPT, FAAOMPT</h4>
-              <p className="text-xs text-slate-400 mt-2">Columbia University DPT • Post-Surgical Lumbar Disc & Chronic Pelvic Stability Director.</p>
+              <p className="text-base text-zinc-200 leading-relaxed mt-2">Columbia University DPT • Post-Surgical Lumbar Disc & Chronic Pelvic Stability Director.</p>
             </div>
           </div>
         </div>
@@ -449,7 +449,7 @@ export default function App() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-white">PPO Out-of-Network Superbill Submission</h4>
-                  <p className="text-xs text-slate-400 mt-1">We handle all itemized ICD-10 and CPT coding for prompt 60-80% PPO insurance reimbursement.</p>
+                  <p className="text-base text-zinc-200 leading-relaxed mt-1">We handle all itemized ICD-10 and CPT coding for prompt 60-80% PPO insurance reimbursement.</p>
                 </div>
               </div>
 
@@ -459,7 +459,7 @@ export default function App() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-white">HSA / FSA Card Eligible Payments</h4>
-                  <p className="text-xs text-slate-400 mt-1">All evaluation and treatment sessions qualify for 100% tax-free Health Savings Account payments.</p>
+                  <p className="text-base text-zinc-200 leading-relaxed mt-1">All evaluation and treatment sessions qualify for 100% tax-free Health Savings Account payments.</p>
                 </div>
               </div>
             </div>
@@ -467,12 +467,12 @@ export default function App() {
 
           <div className="lg:col-span-6 bg-[#090d15] border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6">
             <h3 className="text-lg font-bold text-white">Instant Insurance Benefits Check</h3>
-            <p className="text-xs text-slate-400">Submit your policy details for automated verification within 60 minutes:</p>
+            <p className="text-base text-zinc-200 leading-relaxed">Submit your policy details for automated verification within 60 minutes:</p>
 
             <form onSubmit={handleBookingSubmit} className="space-y-4">
               <div>
-                <label className="text-xs font-mono text-slate-300 block mb-1">Insurance Provider</label>
-                <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-cyan-500 outline-none">
+                <label className="text-sm font-semibold font-mono text-slate-300 block mb-1">Insurance Provider</label>
+                <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-cyan-500 outline-none">
                   <option>Blue Cross Blue Shield (PPO)</option>
                   <option>Aetna Choice POS II (PPO)</option>
                   <option>UnitedHealthcare Choice Plus</option>
@@ -483,19 +483,19 @@ export default function App() {
 
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="text-xs font-mono text-slate-300 block mb-1">Member ID</label>
-                  <input required placeholder="W12345678" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-cyan-500 outline-none" />
+                  <label className="text-sm font-semibold font-mono text-slate-300 block mb-1">Member ID</label>
+                  <input required placeholder="W12345678" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-cyan-500 outline-none" />
                 </div>
                 <div>
-                  <label className="text-xs font-mono text-slate-300 block mb-1">Group Number</label>
-                  <input placeholder="GRP-98210" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-cyan-500 outline-none" />
+                  <label className="text-sm font-semibold font-mono text-slate-300 block mb-1">Group Number</label>
+                  <input placeholder="GRP-98210" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-cyan-500 outline-none" />
                 </div>
               </div>
 
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-3.5 bg-cyan-500 hover:bg-cyan-400 text-black font-bold rounded-xl text-xs tracking-wider transition-all shadow-lg shadow-cyan-500/20"
+                  className="w-full py-3.5 bg-cyan-500 hover:bg-cyan-400 text-black font-bold rounded-xl text-base font-semibold min-h-[44px] tracking-wider transition-all shadow-lg shadow-cyan-500/20"
                 >
                   VERIFY MY OUT-OF-NETWORK COVERAGE
                 </button>
@@ -513,7 +513,7 @@ export default function App() {
               <Activity className="w-4 h-4 text-cyan-400" />
               <span className="font-bold text-white font-mono tracking-wider">KINETIC SPINE & SPORTS</span>
             </div>
-            <p className="text-slate-400 text-[11px] leading-relaxed">
+            <p className="text-slate-400 text-xs font-semibold leading-relaxed">
               Orthopedic physical therapy and sports performance operating system. Built for modern private practice clinics and athletic facilities.
             </p>
           </div>
@@ -540,7 +540,7 @@ export default function App() {
 
           <div className="space-y-3">
             <h5 className="font-mono text-white text-xs uppercase tracking-wider">Clinician Door</h5>
-            <p className="text-[11px] text-slate-400">
+            <p className="text-xs font-semibold text-slate-400">
               Access the clinical appointments roster with the 1-click bypass passkey:
             </p>
             <button
@@ -552,7 +552,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500">
+        <div className="max-w-7xl mx-auto pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs font-semibold text-slate-300">
           <div>© 2026 Kinetic Spine & Sports PT OS. All Rights Reserved. Turnkey Clinical Operating System.</div>
           <div className="mt-2 sm:mt-0 font-mono text-cyan-400">Passkey: pt2026</div>
         </div>
@@ -580,29 +580,29 @@ export default function App() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-white">Book Initial Orthopedic Evaluation</h3>
-                    <p className="text-xs text-slate-400">60-minute 1-on-1 diagnostic exam with a DPT</p>
+                    <p className="text-base text-zinc-200 leading-relaxed">60-minute 1-on-1 diagnostic exam with a DPT</p>
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-xs font-mono text-slate-400 block mb-1">Full Legal Name</label>
-                  <input required placeholder="Marcus Vance" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-cyan-500 outline-none" />
+                  <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Full Legal Name</label>
+                  <input required placeholder="Marcus Vance" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-cyan-500 outline-none" />
                 </div>
 
                 <div className="grid grid-cols-2 gap-3">
                   <div>
-                    <label className="text-xs font-mono text-slate-400 block mb-1">Email</label>
-                    <input required type="email" placeholder="athlete@example.com" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-cyan-500 outline-none" />
+                    <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Email</label>
+                    <input required type="email" placeholder="athlete@example.com" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-cyan-500 outline-none" />
                   </div>
                   <div>
-                    <label className="text-xs font-mono text-slate-400 block mb-1">Phone</label>
-                    <input required type="tel" placeholder="+1 (555) 928-1123" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-cyan-500 outline-none" />
+                    <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Phone</label>
+                    <input required type="tel" placeholder="+1 (555) 928-1123" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-cyan-500 outline-none" />
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-xs font-mono text-slate-400 block mb-1">Primary Injury / Joint Area</label>
-                  <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-cyan-500 outline-none">
+                  <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Primary Injury / Joint Area</label>
+                  <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-cyan-500 outline-none">
                     <option>Knee / ACL / Meniscus Post-Op</option>
                     <option>Lumbar Spine / Lower Back / Sciatica</option>
                     <option>Shoulder / Rotator Cuff / Labrum</option>
@@ -613,7 +613,7 @@ export default function App() {
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 bg-cyan-500 hover:bg-cyan-400 text-black font-bold rounded-xl text-xs tracking-wider transition-all shadow-lg shadow-cyan-500/25 mt-4"
+                  className="w-full py-3.5 bg-cyan-500 hover:bg-cyan-400 text-black font-bold rounded-xl text-base font-semibold min-h-[44px] tracking-wider transition-all shadow-lg shadow-cyan-500/25 mt-4"
                 >
                   CONFIRM EVALUATION APPOINTMENT
                 </button>
@@ -624,7 +624,7 @@ export default function App() {
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
                 <h4 className="text-xl font-bold text-white">Evaluation Confirmed!</h4>
-                <p className="text-xs text-slate-400 max-w-xs mx-auto">
+                <p className="text-base text-zinc-200 leading-relaxed max-w-xs mx-auto">
                   Your intake packet and intake medical history form have been emailed. We look forward to seeing you in clinic.
                 </p>
               </div>
