@@ -346,8 +346,90 @@ export default function App() {
         </div>
       </section>
 
+      {/* Biomechanical Technology Section */}
+      <section id="technology" className="py-20 px-4 sm:px-8 bg-[#090d16] border-t border-slate-800 scroll-mt-20">
+        <div className="max-w-7xl mx-auto bg-[#0b101c] border border-cyan-900/40 rounded-3xl p-8 sm:p-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest bg-cyan-500/10 border border-cyan-500/30 px-3 py-1 rounded-full">
+                BIOMECHANICAL LAB
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-4">
+                Dual Force Plates & 3D Kinematics
+              </h2>
+              <p className="text-slate-400 text-sm mt-3 leading-relaxed">
+                Objective millisecond force plate measurements quantify limb asymmetries, ground reaction forces, and deceleration loading to guarantee safe return-to-sport clearance.
+              </p>
+              <div className="mt-6 flex gap-4">
+                <button
+                  onClick={() => setIsBookModalOpen(true)}
+                  className="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold font-mono text-xs rounded-xl transition shadow-lg shadow-cyan-500/20"
+                >
+                  SCHEDULE BIOMECHANICAL SCREEN
+                </button>
+              </div>
+            </div>
+
+            <div className="p-6 bg-slate-900/60 border border-slate-800 rounded-2xl space-y-3 font-mono text-xs">
+              <div className="flex justify-between py-2 border-b border-slate-800">
+                <span className="text-slate-400">Force Sensor Rate:</span>
+                <span className="text-white font-bold">1,000 Hz Dual Axis Sampling</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-slate-800">
+                <span className="text-slate-400">Limb Symmetry Index:</span>
+                <span className="text-cyan-400 font-bold">&gt;90% Return-to-Play Threshold</span>
+              </div>
+              <div className="flex justify-between py-2">
+                <span className="text-slate-400">High-Speed Video:</span>
+                <span className="text-emerald-400 font-bold">240 FPS Multi-Angle Sagittal/Frontal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DPT Clinicians Section */}
+      <section id="clinicians" className="py-20 px-4 sm:px-8 bg-[#080c14] border-t border-slate-800 scroll-mt-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest bg-cyan-500/10 border border-cyan-500/30 px-3 py-1 rounded-full">
+              CLINICAL FACULTY
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mt-4">
+              Board-Certified Doctors of Physical Therapy
+            </h2>
+            <p className="text-slate-400 text-sm mt-3">
+              1-on-1 dedicated 60-minute appointments with senior clinical specialists. Zero rehab aides or double-booking.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-6 bg-[#0b101c] border border-slate-800 rounded-2xl">
+              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Clinician" className="w-full h-64 object-cover rounded-xl mb-4" />
+              <span className="text-[10px] font-mono text-cyan-400 uppercase">SPORTS RESIDENCY // SCS</span>
+              <h4 className="text-lg font-bold text-white mt-1">Dr. Nathan Mercer, DPT, SCS</h4>
+              <p className="text-xs text-slate-400 mt-2">USC Doctorate • Consultant to Olympic & NCAA Division 1 Track Athletes • ACL Specialist.</p>
+            </div>
+
+            <div className="p-6 bg-[#0b101c] border border-slate-800 rounded-2xl">
+              <img src="https://images.unsplash.com/photo-1594824813596-f089602a8eb2?auto=format&fit=crop&w=600&q=80" alt="Clinician" className="w-full h-64 object-cover rounded-xl mb-4" />
+              <span className="text-[10px] font-mono text-emerald-400 uppercase">ORTHOPEDIC SPECIALIST // OCS</span>
+              <h4 className="text-lg font-bold text-white mt-1">Dr. Samantha Chen, DPT, OCS</h4>
+              <p className="text-xs text-slate-400 mt-2">Northwestern University DPT • Fellow, AAOMPT • Cervical Spine & Complex Shoulder Rehab.</p>
+            </div>
+
+            <div className="p-6 bg-[#0b101c] border border-slate-800 rounded-2xl">
+              <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=600&q=80" alt="Clinician" className="w-full h-64 object-cover rounded-xl mb-4" />
+              <span className="text-[10px] font-mono text-indigo-400 uppercase">SPINE & NEURO-MOBILITY</span>
+              <h4 className="text-lg font-bold text-white mt-1">Dr. Marcus Vance, DPT, FAAOMPT</h4>
+              <p className="text-xs text-slate-400 mt-2">Columbia University DPT • Post-Surgical Lumbar Disc & Chronic Pelvic Stability Director.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Insurance & Direct Access */}
-      <section id="insurance" className="py-20 px-4 sm:px-8 bg-[#06090e]">
+      <section id="insurance" className="py-20 px-4 sm:px-8 bg-[#06090e] scroll-mt-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-6">
             <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest bg-cyan-500/10 border border-cyan-500/30 px-3 py-1 rounded-full">

@@ -5,6 +5,10 @@
   --font-mono: 'Space Grotesk', monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-sans);
   background-color: #06090e;
